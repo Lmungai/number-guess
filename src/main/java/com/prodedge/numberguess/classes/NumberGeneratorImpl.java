@@ -1,6 +1,7 @@
 package com.prodedge.numberguess.classes;
 
 import com.prodedge.numberguess.interfaces.NumberGenerator;
+import lombok.Getter;
 import org.springframework.stereotype.Component;
 import java.util.Random;
 
@@ -9,7 +10,10 @@ public class NumberGeneratorImpl implements NumberGenerator {
 
     // == fields ==
     private final Random random = new Random();
+
+    @Getter
     private final int maxNumber;
+    @Getter
     private final int minNumber;
 
     // == constructor ==
@@ -22,15 +26,5 @@ public class NumberGeneratorImpl implements NumberGenerator {
     @Override
     public int next() {
         return random.nextInt(maxNumber - minNumber) + minNumber;
-    }
-
-    @Override
-    public int getMaxNumber() {
-        return maxNumber;
-    }
-
-    @Override
-    public int getMinNumber() {
-        return minNumber;
     }
 }

@@ -3,15 +3,13 @@ package com.prodedge.numberguess.classes;
 import com.prodedge.numberguess.interfaces.Game;
 import com.prodedge.numberguess.interfaces.MessageGenerator;
 import jakarta.annotation.PostConstruct;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import java.text.MessageFormat;
 
+@Slf4j
 @Component
 public class MessageGeneratorImpl implements MessageGenerator {
-
-    private static final Logger log = LoggerFactory.getLogger(MessageGeneratorImpl.class);
 
     private final Game game;
 
