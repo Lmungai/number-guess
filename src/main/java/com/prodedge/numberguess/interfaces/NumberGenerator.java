@@ -1,6 +1,6 @@
 package com.prodedge.numberguess.interfaces;
 
-interface NumberGenerator {
+public interface NumberGenerator {
     int next();
     int getMaxNumber();
     int getMinNumber();

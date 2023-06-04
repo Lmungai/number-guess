@@ -1,6 +1,6 @@
 package com.prodedge.numberguess.interfaces;
 
-interface MessageGenerator {
+public interface MessageGenerator {
     String getMainMessage();
     String getResultMessage();
 }

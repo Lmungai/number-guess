@@ -1,6 +1,6 @@
 package com.prodedge.numberguess.interfaces;
 
-interface Game {
+public interface Game {
     int getNumber();
     int getGuess();
     void setGuess(int guess);
